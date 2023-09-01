@@ -1,7 +1,7 @@
 * {
     text-align: center;
     font-weight: bold;
-    font-size: 16;
+    font-size: 16pt;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -29,7 +29,10 @@ body {
     "none none"
     "more1 more2"
     "more3 more3";
-    background-color: rgb(255, 245, 232);
+}
+
+.text {
+    grid-column: span 2;
 }
 
 .more1, .more2, .more3 {
@@ -49,22 +52,6 @@ body {
     grid-area: more3;
 }
 
-/* .flex-example-content__bottom-part > div {
-    background: bisque;
-    padding: 2rem 1rem;
-}
-
-.flex-example-content__bottom-part > div:nth-child(1),
-.flex-example-content__bottom-part > div:nth-child(2) {
-    flex: 0 1 calc(50% - 1rem);
-}
-
-.flex-example-content__bottom-part > div:nth-child(3) {
-    flex-grow: 1;
-} */
-
-
-
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -77,10 +64,3 @@ body {
     margin: 25px;
     background-color: white;
 }
-
-
-/* .flex-example-footer > div {
-    background: lightgray;
-    padding: 2rem 1rem;
-    flex-grow: 1;
-} */
